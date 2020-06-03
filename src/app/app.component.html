@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>G A M E</h1>
+  <div class="row">
+    <div class="col-12">
+      <app-game-control (gameStarted)="onStart($event)" (gameStop)="onStop($event)">
+      </app-game-control>
+    </div>
+    <div class="col-12">
+      <div class="row">
+        <div class="col-6">
+          <!-- <h4>Even Numbers</h4>
+          <h3>{{evenNumber}}</h3> -->
+          <app-even [evenNumber]="evenNumber"></app-even>
+        </div>
+        <div class="col-6">
+          <!-- <h4>Odd Numbers</h4>
+          <h3>{{oddNumber}}</h3> -->
+          <app-odd [oddNumber]="oddNumber"></app-odd>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
